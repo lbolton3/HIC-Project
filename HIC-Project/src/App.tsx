@@ -1,8 +1,14 @@
 import Message from "./Message";
+import NavBar from "./Navbar";
 
-
-function App(){
-  return <div><Message></Message></div>
+function App() {
+  return (
+    <div>
+      <NavBar />
+      <Message>
+      </Message>
+    </div>
+  );
 }
 
 
