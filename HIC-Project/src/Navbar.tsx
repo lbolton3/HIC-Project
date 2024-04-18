@@ -1,16 +1,15 @@
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-
-
 
 const NavBar = () => {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#">Navbar</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/"><b>TotallyRealCars</b></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#" active>Home</Nav.Link>
-                    <Nav.Link href="#">Link</Nav.Link>
+                    <Nav.Link as={Link} to="/" active={true}>Home</Nav.Link>
+                    <Nav.Link as={Link} to="/link">Link</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#">Another action</NavDropdown.Item>
@@ -26,8 +25,6 @@ const NavBar = () => {
             </Navbar.Collapse>
         </Navbar>
     );
-
 }
-
 
 export default NavBar;
