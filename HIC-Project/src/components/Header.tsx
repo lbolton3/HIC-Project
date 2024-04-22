@@ -57,6 +57,11 @@ const Header: React.FC = () => {
                 Cart
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/login">
+                login
+              </Link>
+            </li>
           </ul>
           <form className="d-flex" role="search">
             <input

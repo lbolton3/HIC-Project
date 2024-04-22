@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,6 +7,8 @@ import Contact from './pages/Contact';
 import Account from './pages/Account';
 import Cart from './pages/Cart';
 import Inventory from './pages/Inventory';
+import Login from './pages/login';
+
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/inventory" element={<Inventory />} />
         <Route path="/account" element={<Account />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+
       </Routes>
     </Router>
   );
