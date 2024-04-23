@@ -9,7 +9,6 @@ import Cart from './pages/Cart';
 import Inventory from './pages/Inventory';
 import Login from './pages/login';
 
-
 function App() {
   return (
     <Router>
