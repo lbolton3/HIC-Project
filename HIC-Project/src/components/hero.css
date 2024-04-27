@@ -4,7 +4,7 @@
     background-image: url('../assets/car.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 75vh;
     width: 218vh;
     display: flex;
     justify-content: center;
