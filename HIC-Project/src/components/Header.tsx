@@ -57,11 +57,6 @@ const Header: React.FC = () => {
                 Cart
               </Link>
             </li>
-<<<<<<< Updated upstream
-            <li className="nav-item">
-              <Link className="nav-link" to="/login">
-                login
-=======
             {/* Add Login and Signup Links */}
             <li className="nav-item">
               <Link className="nav-link" to="/login">
@@ -71,7 +66,6 @@ const Header: React.FC = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/signup">
                 Sign Up
->>>>>>> Stashed changes
               </Link>
             </li>
           </ul>
