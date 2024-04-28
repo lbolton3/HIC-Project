@@ -47,5 +47,14 @@ def login():
     myEmail = {'email': items[0]}
     return jsonify(detail="Login successful"), 200
 
+@app.route('/account')
+def account():
+    cursor = mysql.connection.cursor()
+    cursor.execute('SELECT * from Customer where Account_Number = "0000000001" ')
+    items = cursor.fetchall()
+    cursor.close()
+    item = items[0]
+    items_data = {'account_number': item[0] , 'first_name': item[1], 'last_name': item[2], 'street_name':item[3], 'street_number':item[4], 'city':item[5], 'state':item[6], 'zip':item[7], 'email':item[8] } 
+    return jsonify(items_data)
 app.run(host='localhost', port=5000)
 
