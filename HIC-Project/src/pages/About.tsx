@@ -4,14 +4,14 @@ import Footer from "../components/Footer";
 
 export const About: React.FC = () => {
   const aboutStyle: React.CSSProperties = {
-    position: "fixed",
-    top: 100,
     width: "100%", // Take full width of the viewport
-    height: "100vh", // Take full height of the viewport
+    minHeight: "100vh", // Take full height of the viewport
     display: "flex", // Use Flexbox
     flexDirection: "column", // Stack children vertically
-    justifyContent: "center", // Center children horizontally
-    alignItems: "center", // Center children vertically
+    alignItems: "center", // Center children horizontally
+    padding: "50px",
+    boxSizing: "border-box", // Include padding in the width calculation
+    overflowY: "auto",
   };
 
   const titleStyle: React.CSSProperties = {
@@ -26,7 +26,7 @@ export const About: React.FC = () => {
     backgroundColor: "#f9f9f9",
     padding: "20px",
     marginTop: "20px",
-    width: "80%", // Adjust as needed
+    width: "100%", // Adjust as needed
     height: "200px", // Adjust as needed
     // marginBottom: "50px",
   };
@@ -63,24 +63,24 @@ export const About: React.FC = () => {
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
-            <h2>Founded Date</h2>
-            <p style={paragraphStyle1}>Insert founded date here</p>
+            <h2>Founded in 1999</h2>
+            <p style={paragraphStyle1}>Totally Real Cars Sales was founded in 1999 by a group of computer science majors dedicated to completeing a group project. We assure you the highest quality cars on the market!</p>
           </div>
-          <img src="path_to_your_image" alt="Founded Date" />
+          {/* <img src="path_to_your_image" alt="Founded Date" /> */}
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
-            <h2>Vision Message</h2>
-            <p style={paragraphStyle2}>Insert vision message here</p>
+            <h2>Our Vision</h2>
+            <p style={paragraphStyle2}>We Hope to deliver the highest quality online car we can so that people can spend less time buying cars and more time with frinds and family!</p>
           </div>
-          <img src="path_to_your_image" alt="Vision Message" />
+          {/* <img src="path_to_your_image" alt="Vision Message" /> */}
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
             <h2>CEO</h2>
-            <p style={paragraphStyle3}>Insert CEO information here</p>
+            <p style={paragraphStyle3}>Our CEO has been working on the development of TotallyRealCarSales since 1995 with a successful launch in 1999, it grew 5 times bigger with a profit of $1</p>
           </div>
-          <img src="path_to_your_image" alt="CEO" />
+          <img src="../assets/myImage.JPG" />
         </div>
       </div>
       <Footer />
