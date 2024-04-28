@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export const About: React.FC = () => {
   const aboutStyle: React.CSSProperties = {
     position: "fixed",
-    top: 0,
+    top: 100,
     width: "100%", // Take full width of the viewport
     height: "100vh", // Take full height of the viewport
     display: "flex", // Use Flexbox
