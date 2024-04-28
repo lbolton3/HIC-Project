@@ -1,3 +1,5 @@
 .container {
-    max-width: 960px;
-  }
+    max-width: 100px;
+    margin: 0 auto; /* This will center the container horizontally */
+
+}

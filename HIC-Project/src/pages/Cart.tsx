@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
 import '../components/cart.css';
+
 const Cart: React.FC = () => {
-  const year = new Date().getFullYear();
+  const year: number = new Date().getFullYear();
 
   return(
     <>
@@ -10,7 +11,6 @@ const Cart: React.FC = () => {
       <main>
         <div className="container"></div>
         <div className="py-5 text-center">
-            <img className="d-block mx-auto mb-4" src="/docs/{{< param docs_version >}}/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> </img>
             <h2>Checkout form</h2>
             <p className="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required/ form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
           </div>
@@ -58,9 +58,9 @@ const Cart: React.FC = () => {
 
               <form className="card p-2">
                 <div className="input-group">
-                  <input type="text" className="form-control" placeholder="Promo code">
+                  <input type="text" className="form-control" placeholder="Promo code"/>
                     <button type="submit" className="btn btn-secondary">Redeem</button>
-                  </input>
+                  
                 </div>
               </form>
             </div>
@@ -236,6 +236,5 @@ const Cart: React.FC = () => {
   );
  
 };
-
 
 export default Cart;
