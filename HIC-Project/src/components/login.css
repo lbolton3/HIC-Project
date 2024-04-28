@@ -1,25 +1,5 @@
 .login {
-    background-image: url("../assets/coolcar.jpg");
+    background-image: url("C:\Users\lenni\Desktop\struct prog class\HIC-Project\HIC-Project\src\assets\coolcar.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.login-content {
-    background-color: rgba(121, 114, 114, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(90, 85, 85, 0.93);
-    max-width: 50vw;
-    margin-left: -300px;
-    margin-right: -300px;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from 'react-bootstrap/Image';
 
 export const About: React.FC = () => {
   const aboutStyle: React.CSSProperties = {
@@ -35,7 +36,7 @@ export const About: React.FC = () => {
     display: "flex",
     flexDirection: "row", // Stack children horizontally
     justifyContent: "flex-start", // Center children horizontally
-    width: "50%", // Adjust as needed
+    width: "80%", // Adjust as needed
   };
 
   const paragraphStyle1: React.CSSProperties = {
@@ -44,7 +45,7 @@ export const About: React.FC = () => {
   };
 
   const paragraphStyle2: React.CSSProperties = {
-    marginLeft: "110px", // Add space between the header and the paragraph
+    marginLeft: "140px", // Add space between the header and the paragraph
     fontSize: "1.5em",
   };
 
@@ -54,20 +55,24 @@ export const About: React.FC = () => {
       <div style={aboutStyle}>
         <div style={titleStyle}>
           {" "}
-          <h1>Contact Us</h1>
+          <h1>Contact</h1>
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
             <h2>Have Questions?</h2>
-            <p style={paragraphStyle1}>Contact info</p>
+            <p style={paragraphStyle1}>You can contact one of our representative via
+            email at realcars@gmail.com or call us at 111-111-1111</p>
           </div>
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
-            <h2>Social Media</h2>
-            <p style={paragraphStyle2}>Social Media info</p>
+            <h2>Follow Us</h2>
+            <p style={paragraphStyle2}>If you are having any trouble with recieving one
+            of our cars, want to comment about our level of service, or just want to stay
+            updated on anything TotallyRealCarSales, follow us on social media for some
+            great content.</p>
           </div>
-          <img src="path_to_your_image" alt="Social Media Picture" />
+          <Image src="src\assets\Media.webp" rounded style={{ width: '200px', height: '200px' }} />
         </div>
       </div>
       <Footer />
