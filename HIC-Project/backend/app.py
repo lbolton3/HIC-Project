@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
 from flask_cors import CORS
+from flask_jwt_extended import create_access_token,get_jwt,get_jwt_identity, \
+                               unset_jwt_cookies, jwt_required, JWTManager
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -31,6 +33,19 @@ def get_items():
     #items_data = ({'name' : item[4], 'price': item[1]}for item in items)
 
     return jsonify(items_data)
+    
+@app.route('/login')
+def login():
+    # depending on your use case, it might be `request.form`.
+    request_data = request.get_json()
+    
+    # checks if user exists in db 
+    cursor = mysql.connection.cursor()
+    cursor.execute('SELECT email from Customers where email = %s'[request_data])
+    items = cursor.fetchall()
+    cursor.close()
+    myEmail = {'email': items[0]}
+    return jsonify(detail="Login successful"), 200
 
 app.run(host='localhost', port=5000)
 
