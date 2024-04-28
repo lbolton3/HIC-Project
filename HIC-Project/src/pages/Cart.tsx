@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-
+import '../components/cart.css';
 const Cart: React.FC = () => {
   const year = new Date().getFullYear();
 
