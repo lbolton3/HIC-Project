@@ -1,5 +1,5 @@
 import './hero.css';
-
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
     return (
         <section className="hero">
@@ -8,9 +8,11 @@ const HeroSection = () => {
                 Your browser does not support the video tag.
             </video>
             <div className="hero-content">
-                <h1>Welcome to Our Website</h1>
-                <p>Discover amazing products that will change your life.</p>
-                <button className="cta-button">Explore Now</button>
+                <h1>Welcome to TotallyRealCars.Com</h1>
+                <p>We have amazing deals on Cars, trucks, and tanks!</p>
+                <Link to="/inventory" className="cta-link">
+                    <button className="cta-button">Explore Now</button>
+                </Link>
             </div>
         </section>
     );
