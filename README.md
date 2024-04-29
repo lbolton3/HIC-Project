@@ -18,6 +18,7 @@ Our implementation of the HIC project using React/Typescript
 * pip install MySQL
 * pip install flask
 * pip install flask_mysqldb
+* import edodge5.sql into MySQL
 * Download MySQL from MySQL: https://www.mysql.com/products/community/
 
 
