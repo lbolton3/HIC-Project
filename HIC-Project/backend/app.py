@@ -13,7 +13,7 @@ cors = CORS(app)
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Hithere11!'
+app.config['MYSQL_PASSWORD'] = 'HiThere11!'
 app.config['MYSQL_DB'] = 'edodge5'
 
 # Intialize MySQL
