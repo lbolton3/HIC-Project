@@ -57,9 +57,10 @@ const Header: React.FC = () => {
                 Cart
               </Link>
             </li>
+            {/* Add Login and Signup Links */}
             <li className="nav-item">
               <Link className="nav-link" to="/login">
-                login
+                Login
               </Link>
             </li>
           </ul>
