@@ -19,18 +19,18 @@ interface AccountProps {
   user: User;
 }
 const aboutStyle: React.CSSProperties = {
-  position: "fixed",
-  top: 0,
   width: "100%", // Take full width of the viewport
-  height: "100vh", // Take full height of the viewport
+  minHeight: "100vh", // Take full height of the viewport
   display: "flex", // Use Flexbox
   flexDirection: "column", // Stack children vertically
-  justifyContent: "center", // Center children horizontally
-  alignItems: "left", // Center children vertically
+  alignItems: "center", // Center children horizontally
+  padding: "50px",
+  boxSizing: "border-box", // Include padding in the width calculation
   overflowY: "auto",
 };
 const titleStyle: React.CSSProperties = {
   //marginBottom: "80px",
+  top: 50,
   fontSize: "1.5em",
 };
 const textStyle: React.CSSProperties = {
@@ -53,15 +53,15 @@ const headerStyle: React.CSSProperties = {
   width: "50%", // Adjust as needed
 };
 
-const paragraphStyle1: React.CSSProperties = {
-  marginLeft: "50px", // Add space between the header and the paragraph
-  fontSize: "1.5em",
-};
+// const paragraphStyle1: React.CSSProperties = {
+//   marginLeft: "50px", // Add space between the header and the paragraph
+//   fontSize: "1.5em",
+// };
 
-const paragraphStyle2: React.CSSProperties = {
-  marginLeft: "110px", // Add space between the header and the paragraph
-  fontSize: "1.5em",
-};
+// const paragraphStyle2: React.CSSProperties = {
+//   marginLeft: "110px", // Add space between the header and the paragraph
+//   fontSize: "1.5em",
+// };
 const AccountDisplay: React.FC<AccountProps> = ({ user }) => {
   return (
     <div className="user">
@@ -82,12 +82,12 @@ const AccountDisplay: React.FC<AccountProps> = ({ user }) => {
           <h2>Address: {user.street_number} {user.street_name} {user.city} {user.state} {user.zip}</h2>
         </div>
       </div>
-        <div style={textStyle}>
-          <div style={headerStyle}>
-            <h2>Email: {user.email}</h2>
+      <div style={textStyle}>
+        <div style={headerStyle}>
+          <h2>Email: {user.email}</h2>
 
-          </div>
         </div>
+      </div>
     </div>
   );
 };

@@ -59,15 +59,15 @@ export const About: React.FC = () => {
         <div style={textStyle}>
           <div style={headerStyle}>
             <h2>Have Questions?</h2>
-            <p style={paragraphStyle1}>Contact info</p>
+            <p style={paragraphStyle1}>Please call us at 111-real-cars</p>
           </div>
         </div>
         <div style={textStyle}>
           <div style={headerStyle}>
             <h2>Social Media</h2>
-            <p style={paragraphStyle2}>Social Media info</p>
+            <p style={paragraphStyle2}>If you are having trouble with recieving one of our cars, or want to thank us for the amazing customer service, tag us on instagram!</p>
           </div>
-          <img src="path_to_your_image" alt="Social Media Picture" />
+          <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" width={"300"} height={"200"} alt="Social Media Picture" />
         </div>
       </div>
       <Footer />
