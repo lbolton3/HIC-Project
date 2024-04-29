@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
 from flask_cors import CORS
-from flask_jwt_extended import create_access_token,get_jwt,get_jwt_identity, \
-                               unset_jwt_cookies, jwt_required, JWTManager
+
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -14,7 +13,7 @@ cors = CORS(app)
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'HiThere11!'
+app.config['MYSQL_PASSWORD'] = 'Hithere11!'
 app.config['MYSQL_DB'] = 'edodge5'
 
 # Intialize MySQL
